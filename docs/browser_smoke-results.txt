@@ -1,0 +1,24 @@
+{
+  "status": "passed",
+  "checks": [
+    "Dashboard, candles and WebSocket price updates",
+    "Timeframe switching, chart layers and historical loading",
+    "Page: Live Markets",
+    "Page: Chart",
+    "Page: Predictions",
+    "Page: Market Scanner",
+    "Page: ICT / SMC Analysis",
+    "Page: Model Performance",
+    "Page: Prediction History",
+    "Page: Watchlist",
+    "Page: Settings",
+    "Alert creation persisted",
+    "Model training job completed through the UI",
+    "Promoted demo model forecast displayed",
+    "Validated demo prediction range overlays the chart",
+    "Generated prediction persisted in history",
+    "Backtest form, trade table, equity and drawdown charts",
+    "Mobile layout without horizontal overflow",
+    "No browser runtime errors"
+  ]
+}

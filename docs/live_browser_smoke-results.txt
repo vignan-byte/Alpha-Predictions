@@ -1,0 +1,18 @@
+{
+  "status": "passed",
+  "checked_at_utc": "2026-10-02T02:58:41Z",
+  "checks": [
+    "Real Binance WebSocket candle frames relayed through FastAPI and Vite to browser",
+    "Candlestick/volume canvas redraw verified after live frames (pixel change is not required for unchanged quotes)",
+    "Displayed live price matches a received Binance close",
+    "Live closed-candle analysis generated indicators and structure without the developing candle",
+    "Live prediction pipeline generated evidence-backed scenarios and correctly withheld unvalidated ML probability",
+    "Browser reconnects after WebSocket closure and receives fresh Binance frames",
+    "Live browser displayed honest prediction status with no runtime errors"
+  ],
+  "stream_frames": 18,
+  "stream_source": "binance",
+  "analysis_asof": 1790909700,
+  "prediction_status": "unavailable",
+  "note": "No promoted live model in fresh installation. Unvalidated probabilities are intentionally withheld; live training metrics are documented separately."
+}

@@ -1,0 +1,11 @@
+{
+  "status": "passed",
+  "checks": [
+    "Launcher starts compiled frontend on localhost:5173 and healthy migrated backend on localhost:8000",
+    "Production preview proxies health, APIs and documentation",
+    "Compiled React app receives proxied WebSocket candles with no runtime errors",
+    "Launcher stops server processes after interrupt"
+  ],
+  "platform": "linux",
+  "windows_native": "BLOCKED: Linux runner; Windows wrappers statically reviewed"
+}

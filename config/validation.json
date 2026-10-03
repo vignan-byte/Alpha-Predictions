@@ -1,0 +1,1 @@
+{"feature_version":"causal-v1","train_fraction":0.5,"calibration_fraction":0.15,"validation_fraction":0.15,"test_fraction":0.2,"minimum_usable_rows":500,"minimum_forward_predictions":30,"purge":"horizon_bars","incumbent_improvement":0.01,"note":"Audit reference for constants in models/pipeline.py; not runtime overrides."}

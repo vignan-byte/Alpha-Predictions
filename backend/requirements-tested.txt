@@ -1,0 +1,18 @@
+# Python 3.12 Linux dependency snapshot used for final verification.
+fastapi==0.142.2
+uvicorn==0.54.0
+pandas==2.2.3
+numpy==2.3.5
+scikit-learn==1.8.0
+pydantic==2.13.5
+pydantic-settings==2.15.0
+SQLAlchemy==2.1.1
+alembic==1.20.0
+httpx==0.28.1
+websockets==16.0
+joblib==1.5.3
+python-multipart==0.0.32
+pytest==9.1.1
+tzdata==2026.4
+socksio==1.0.0
+threadpoolctl==3.6.0

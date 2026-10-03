@@ -1,0 +1,9 @@
+# Paper account accounting and lifecycle
+
+A book is keyed by `source:quote_currency`. Demo, Binance and Twelve Data books are isolated. USD/USDT/JPY accounts are not converted or pooled. Each book stores initial balance, realized cash, positions, previews/fills, trade history and sampled equity. Account updates run inside a SQLite IMMEDIATE transaction; PostgreSQL uses an advisory transaction lock and row lock. Confirmation is idempotent by preview ID, including concurrent requests.
+
+Preview validates fresh positive quotes, finite values, side, quantity, costs and bracket direction. Optional risk sizing uses balance, stop distance and a conservative cost allowance. Full entry notional is reserved as collateral; leverage is not supported. Preview expires after 30 seconds. Confirmation rechecks quotes, price drift (50 bps), brackets and available balance, then charges entry fee exactly once.
+
+Floating P&L = side × (mark − entry) × units. Equity = cash balance + floating P&L. Available cash = max(0, cash − reserved entry notional). At close, adverse slippage adjusts the exit; gross P&L minus exit fee is added to cash, while net trade P&L includes both entry and exit fees. Fees already paid are realized expenses even while a position remains open. Profit factor is null when there is no negative-P&L denominator; it is not rendered as invented infinity.
+
+SL/TP checks use observed fresh quotes while the backend runs. They are not guaranteed fills at the stop/target level. Quotes older than 120 seconds cannot fill or close an order; stale marks are visibly timestamped. Ten-second monitoring cannot reconstruct unobserved intraperiod touches or offline prices. Both long and short stop/target paths are tested. Only market orders and full closes exist; no pending limit orders, partial exits or real execution.

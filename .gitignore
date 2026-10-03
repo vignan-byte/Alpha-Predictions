@@ -1,0 +1,13 @@
+.venv/
+**/__pycache__/
+**/.pytest_cache/
+**/.env
+**/node_modules/
+**/dist/
+*.tsbuildinfo
+*.db
+*.db-shm
+*.db-wal
+models/trained/*.joblib
+models/metadata/*.json
+*.log

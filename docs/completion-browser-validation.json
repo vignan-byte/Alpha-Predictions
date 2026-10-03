@@ -1,0 +1,25 @@
+{
+  "status": "passed",
+  "checked_at_utc": "2026-10-02T02:54:04Z",
+  "checks": [
+    "Optional authentication hides application until login; signed session cookie authorizes HTTP and WebSocket",
+    "Filled FVG/order-block/session/OTE primitives render and redraw under zoom and pan",
+    "Crypto and explicitly labeled demo forex symbol switching",
+    "All nine chart timeframes load successfully",
+    "Calendar missing-key state, impact and currency filters are honest",
+    "News missing-key state is independent of calendar",
+    "Correlation matrix, aligned return statistics and instrument changes",
+    "Paper order preview persists without placing a position",
+    "Confirmed virtual fill reserves collateral and charges entry fees",
+    "Manual close, net P&L, persistent trade history and equity curve reconcile",
+    "Paper account and authentication survive page reload",
+    "Alert creation, browser permission and sound opt-in controls",
+    "Background collector triggers and persists a source-scoped price alert",
+    "Backtest chronological research, holdout and three forward windows render",
+    "Paper workspace mobile layout without page overflow",
+    "No browser runtime errors across new modules"
+  ],
+  "runtime_errors": [],
+  "mode": "demo with authentication",
+  "note": "Calendar/news credential absence verified; no claim of live provider verification."
+}

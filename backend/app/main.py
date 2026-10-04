@@ -92,6 +92,7 @@ async def collector():
                             "event": "collector_error",
                             "symbol": symbol,
                             "error_type": type(exc).__name__,
+                            "error": str(exc),
                         }
                     )
                 )
